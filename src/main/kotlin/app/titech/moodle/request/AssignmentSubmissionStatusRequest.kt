@@ -52,7 +52,7 @@ data class AssignmentSubmissionGrade(
     val attemptnumber: Int, // Attempt number.
     val timecreated: Int, // Grade creation time.
     val timemodified: Int, // Grade last modified time.
-    val grader: Int, // Grader, -1 if grader is hidden.
+    val grader: Int? = null, // Grader, -1 if grader is hidden.
     val grade: String? = null, // Grade.
     val gradefordisplay: String? = null // Grade rendered into a format suitable for display.
 )
