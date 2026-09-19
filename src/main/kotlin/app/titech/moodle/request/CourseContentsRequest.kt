@@ -48,7 +48,7 @@ data class CourseContentModule(
 
 @Serializable
 data class CourseContentModuleCompletionData(
-    val stateval: Int
+    val state: Int? = null
 )
 
 @Serializable
